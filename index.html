@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./laptop 2.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/3c28294009.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GithubFinder</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <a href="index.html" class="noLink"
+          ><img src="./laptop 2.png" alt=""
+        /></a>
+        <a href="index.html" class="noLink"
+          ><h1 class="animate__animated animate__zoomIn">
+            Github<span id="finder">Finder</span>
+          </h1></a
+        >
+      </div>
+      <div id="search">
+        <input
+          type="text"
+          name="username"
+          id=""
+          oninput="getUserName(this)"
+          placeholder=" search..."
+        />
+        <button onclick="search()"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+
+    <div id="card"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
